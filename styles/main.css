@@ -1,0 +1,96 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.iti__flag {
+  background-image: url("../images/flags.png");
+}
+
+.iti {
+  width: 100%;
+  /* position: relative; */
+  /* left: 40px; */
+}
+
+.iti__arrow { border: none; }
+
+
+svg {
+    width: 9em;
+}
+
+.attr-link {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.boogaloo {
+    font-family: 'Boogaloo',
+        cursive;
+}
+
+.roboto {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+}
+
+.slabo {
+    font-family: 'Slabo 27px',
+        serif;
+}
+
+.form-signin, .upper {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[name="firstName"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin .mid-input {
+    margin-bottom: -1px;
+    border-radius: 0;
+}
+
+/* .form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+} */
+.form-signin input[name="city"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+button {
+    margin-top: 40px;
+}
