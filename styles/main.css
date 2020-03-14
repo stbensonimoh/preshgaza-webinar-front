@@ -91,6 +91,8 @@ svg {
   border-top-right-radius: 0;
 }
 
-button {
+.btn-danger {
     margin-top: 40px;
+    background-color: #ec008c;
+    border-color: #ec008c;
 }
