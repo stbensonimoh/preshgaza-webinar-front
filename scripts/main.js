@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', e => {
       //@ts-ignore
       const formdata = new FormData(form)
       // initiate a fetch call
-      fetch('https://awlo.org/awlc/awlc2020/backend/register', {
+      fetch('https://webinar-backend.herokuapp.com/register', {
         method: 'post',
         body: formdata
       })
