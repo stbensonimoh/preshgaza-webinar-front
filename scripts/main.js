@@ -38,38 +38,38 @@ document.addEventListener('DOMContentLoaded', e => {
     val = val.toLowerCase()
     const emaildata = new FormData()
     emaildata.append('email', val)
-//     // initiate a fetch call
-//     fetch('https://awlo.org/awlc/awlc2020/backend/checkuser', {
-//       method: 'post',
-//       body: emaildata
-//     })
-//       .then(response => {
-//         return response.json()
-//       })
-//       .then(data => {
-//         console.log(data)
-//         //@ts-ignore
-//         if (data === 'user_exists') {
-//           //@ts-ignore
-//           swal(
-//             'Already Registered',
-//             'You have already registered for the conference.',
-//             'warning'
-//           )
-//           setTimeout(() => {
-//             // @ts-ignore
-//             window.location = 'https://awlo.org/awlc/inviteafriend'
-//           }, 3000)
-//         } else if (data === 'no_user') {
-//           // window.location.href = data;
-//           console.log('no user')
-//         } else {
-//           window.location.href = data
-//         }
-//       })
-//       .catch(err => {
-//         console.log(`e don happen ${err}`)
-//       })
+    // initiate a fetch call
+    fetch('https://webinar-backend.herokuapp.com/checkuser', {
+      method: 'post',
+      body: emaildata
+    })
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        console.log(data)
+        //@ts-ignore
+        if (data === 'user_exists') {
+          //@ts-ignore
+          Swal.fire({
+            title: 'Already Registered',
+            text: 'You have already registered for the webinar.',
+            icon: 'warning'
+          })
+          setTimeout(() => {
+            // @ts-ignore
+            window.location = 'https://twitter.com/preshgaza'
+          }, 3000)
+        } else if (data === 'no_user') {
+          // window.location.href = data;
+          console.log('no user')
+        } else {
+          window.location.href = data
+        }
+      })
+      .catch(err => {
+        console.log(`e don happen ${err}`)
+      })
   }
 
   const form = document.querySelector('form')
