@@ -7,7 +7,7 @@
     <meta name="description" content="Webinar Registration Portal">
     <meta property="og:logo" content="https://preciousgaza.com/webinar/images/logo.svg">
     <meta name="theme-color" content="#ee2a7b" />
-    <title>Webinar Registration Closed!</title>
+    <title>Webinar Registration</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- Load intl-tel-input -->
     <link rel="stylesheet" href="styles/intlTelInput.min.css">
@@ -93,16 +93,27 @@
                 <line class="cls-3" x1="152.59" y1="33.49" x2="168.91" y2="24.06" />
             </svg>
         </p>
-        <!-- <h1 class="h3 boogaloo white text-center">
+        <h1 class="h3 boogaloo white text-center">
             Break Free from toxic relationships: A guide to creating healthy boundries.
-        </h1> -->
-        <!-- <p class="text-center white slabo">
+        </h1>
+        <p class="text-center white slabo">
             A WEBINAR
-        </p> -->
+        </p>
         <!-- <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
-        <h1 class="boogaloo" style="margin-top: 2em;">Webinar Registration Closed!</h1>
-        <p>Check back soon for another webinar!</p>
-        <p class="mt-5 mb-3 text-muted" style="padding-top: 6em;">&copy; <span id="year"></span> Precious Gaza</p>
+        <label for="firstName" class="sr-only">First Name</label>
+        <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Your First Name" required>
+        <label for="lastName" class="sr-only">Last Name</label>
+        <input type="text" id="lastName" name="lastName" class="form-control mid-input" placeholder="Your Last Name"
+            required>
+        <label for="phone" class="sr-only">Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="form-control mid-input" placeholder="Your Phone Number"
+            required>
+        <label for="email" class="sr-only">Email address</label>
+        <input type="email" id="email" name="email" class="form-control mid-input" placeholder="Email address" required>
+        <label for="city" class="sr-only">City</label>
+        <input type="text" id="city" name="city" class="form-control" placeholder="City" required>
+        <button class="btn btn-lg btn-danger btn-block" type="submit">Save my Spot</button>
+        <p class="mt-5 mb-3 text-muted">&copy; <span id="year"></span> Precious Gaza</p>
         <small class="text-center form-text bottom-margin white">Designed and Developed by <a class="attr-link"
                 href="https://stbensonimoh.com/about" target="_blank">Benson
                 Imoh,ST</a></small>
@@ -117,7 +128,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="scripts/main2.js"></script>
+        <script src="scripts/main.js"></script>
 </body>
 
 </html>
